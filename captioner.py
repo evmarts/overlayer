@@ -37,21 +37,21 @@ def place_caption(im, cap, font):
 
 def main():
 	W = H = 1080
-	im = Image.open("bkg.jpg").resize((W,H))
+	im = Image.open("in/bkg.jpg").resize((W,H))
 	im = apply_tint(im, (200,200,200))
 	draw = ImageDraw.Draw(im)
 
 	cap = "Whatever you do, do it for yourself."
-	cap_font = ImageFont.truetype("BebasNeue.otf",115)
+	cap_font = ImageFont.truetype("utils/BebasNeue.otf",115)
 	place_caption(im, cap, cap_font)
 
 	trademark = "Lifting.Motivations"
-	tm_font = ImageFont.truetype("BebasNeue.otf",62)
+	tm_font = ImageFont.truetype("utils/BebasNeue.otf",62)
 	place_trademark(im, trademark, tm_font)
 
-	logo = Image.open("logo.png").resize((65,65))
+	logo = Image.open("utils/logo.png").resize((65,65))
 	place_logo(im, logo)
 
-	im.save('out.png')
+	im.save('out/out.png')
 
 main()
