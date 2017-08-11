@@ -37,7 +37,7 @@ input image *bkg8.jpg* and its output *out.png*
 
 captions a number of images from the *in/bkg/* directory with captions from the *in/cap.txt* text file
 
-#####input files: 
+**input files:** 
 
 *cap.txt*
 
@@ -47,7 +47,7 @@ Second caption.
 Third caption.
 ~~~
 
-*in/bkg/* dir
+*in/bkg/*
 
 <img src="./figures/fig5.jpg" width="128x" alt=""> <img src="./figures/fig3.jpg" width="128x" alt=""> <img src="./figures/fig4.jpg" width="128x" alt=""> 
 
@@ -65,7 +65,7 @@ Captioning bkg9.jpg...
 Output image saved as: out/_Third capt.png
 ~~~
 
-#####output files:
+**output files:** 
 
  <img src="./figures/fig5_capped.png" width="220x" alt="">  <img src="./figures/fig3_capped.png" width="220x" alt=""> <img src="./figures/fig4_capped.png" width="220x" alt="">
 
@@ -99,7 +99,7 @@ Captioning bkg9.jpg...
 Output image saved as: out/2_Third capt.png
 ~~~
 
-#####output files:
+**output files:**
 
 We have three images and three captions so we get nine output images:
  
