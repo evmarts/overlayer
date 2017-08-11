@@ -14,7 +14,6 @@ def place_trademark(im, trademark, font):
 	bbox =  im.getbbox()
 	W = bbox[2]
 	H = bbox[3]
-	## TODO fix hardcode
 	draw.text(((W-800/2)/2, 1010), trademark, font=font)
 	return im
 
@@ -38,21 +37,23 @@ def place_caption(im, cap, font):
 def main():
 	W = H = 1080
 	im_path = raw_input("Enter path of image to caption: ")
+	cap = raw_input("Enter caption: ")
+	logoify = (raw_input("Include logo/trademark? (y/n): ") == 'y')
 	im = Image.open(im_path).resize((W,H))
 	im = apply_tint(im, (200,200,200))
 	draw = ImageDraw.Draw(im)
 
-	cap = raw_input("Enter caption: ")
 	cap_font = ImageFont.truetype("utils/BebasNeue.otf",115)
 	place_caption(im, cap, cap_font)
 
-	trademark = "Lifting.Motivations"
-	tm_font = ImageFont.truetype("utils/BebasNeue.otf",62)
-	place_trademark(im, trademark, tm_font)
-
-	logo = Image.open("utils/logo.png").resize((65,65))
-	place_logo(im, logo)
+	if (logoify):
+		trademark = "Lifting.Motivations"
+		tm_font = ImageFont.truetype("utils/BebasNeue.otf",62)
+		place_trademark(im, trademark, tm_font)
+		logo = Image.open("utils/logo.png").resize((65,65))
+		place_logo(im, logo)
 
 	im.save('out/out.png')
+	print "Output image saved as: out/out.png"
 
 main()
