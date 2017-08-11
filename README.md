@@ -5,7 +5,7 @@ Scripts to add text to images
 
 applies a black tint and captions a background image
 
-####example: *with* a logo/trademark
+**example:** *with* a logo/trademark
 
 ~~~
 $ python captioner.py
@@ -19,7 +19,7 @@ Output image saved as: out/out.png
 input image *bkg9.jpg* and its output *out.png*
 
 
-####example: *without* a logo/trademark
+**example:** *without* a logo/trademark
 
 ~~~
 $ python captioner.py
@@ -51,7 +51,7 @@ Third caption.
 
 <img src="./figures/fig5.jpg" width="128x" alt=""> <img src="./figures/fig3.jpg" width="128x" alt=""> <img src="./figures/fig4.jpg" width="128x" alt=""> 
 
-####example: Generating pairings between an image and a caption
+**example:** Generating pairings between an image and a caption
 
 ~~~
 $ python bulk-captioner.py
@@ -73,7 +73,7 @@ This is helpful when I have captions that go with specific images.
 
 However, most of the time I am bulk downloading images and captions so I want to generate all image/caption combinations and pick out the ones I like:
 
-####example: Generates all permutations of images with captions:
+**example:** Generates all permutations of images with captions:
 
 ~~~
 $ python bulk-captioner.py
