@@ -16,7 +16,7 @@ Output image saved as: out/out.png
 ~~~
 <img src="./figures/fig1.jpg" width="270x" alt="">  <img src="./figures/fig1_capped.png" width="270px" alt="">
 
-######input image *bkg9.jpg* and its output *out.png*
+input image *bkg9.jpg* and its output *out.png*
 
 
 e.g. *without* a logo/trademark
@@ -31,7 +31,7 @@ Output image saved as: out/out.png
 
 <img src="./figures/fig2.jpg" width="270x" alt="">  <img src="./figures/fig2_capped.png" width="270px" alt="">
 
-######input image *bkg8.jpg* and its output *out.png*
+input image *bkg8.jpg* and its output *out.png*
 
 ### bulk-captioner.py
 
