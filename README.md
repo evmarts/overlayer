@@ -97,22 +97,10 @@ Output image saved as: out/2_Third capt.png
 
 We have three images and three captions so we get nine output images:
  
-<img src="./figures/fig5.jpg" width="128x" alt=""> 
-<img src="./figures/fig3.jpg" width="128x" alt=""> 
-<img src="./figures/fig4.jpg" width="128x" alt="">
+<img src="./figures/fig12_capped.png" width="128x" alt=""> <img src="./figures/fig8_capped.png" width="128x" alt=""> <img src="./figures/fig10_capped.png" width="128x" alt="">
 
- &nbsp;
+<img src="./figures/fig6_capped.png" width="128x" alt=""> <img src="./figures/fig13_capped.png" width="128x" alt=""> <img src="./figures/fig11_capped.png" width="128x" alt="">
  
-<img src="./figures/fig12_capped.png" width="128x" alt="">
-<img src="./figures/fig8_capped.png" width="128x" alt="">
-<img src="./figures/fig10_capped.png" width="128x" alt="">
-
-<img src="./figures/fig6_capped.png" width="128x" alt="">
-<img src="./figures/fig13_capped.png" width="128x" alt="">
-<img src="./figures/fig11_capped.png" width="128x" alt="">
- 
-<img src="./figures/fig7_capped.png" width="128x" alt="">
-<img src="./figures/fig9_capped.png" width="128x" alt="">
-<img src="./figures/fig14_capped.png" width="128x" alt="">
+<img src="./figures/fig7_capped.png" width="128x" alt=""> <img src="./figures/fig9_capped.png" width="128x" alt=""> <img src="./figures/fig14_capped.png" width="128x" alt="">
   
  
