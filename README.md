@@ -45,6 +45,10 @@ Second caption.
 Third caption.
 ~~~
 
+*in/bkg/* dir
+
+<img src="./figures/fig5.jpg" width="128x" alt=""> <img src="./figures/fig3.jpg" width="128x" alt=""> <img src="./figures/fig4.jpg" width="128x" alt=""> 
+
 e.g. Looping through each image and caption once, giving the first image the first caption, second image with second caption and so on:
 
 ~~~
@@ -59,11 +63,7 @@ Captioning bkg9.jpg...
 Output image saved as: out/_Third capt.png
 ~~~
 
-<img src="./figures/fig5.jpg" width="128x" alt="">  <img src="./figures/fig5_capped.png" width="128x" alt="">
-
-<img src="./figures/fig3.jpg" width="128x" alt="">  <img src="./figures/fig3_capped.png" width="128px" alt="">
-
-<img src="./figures/fig4.jpg" width="128x" alt="">  <img src="./figures/fig4_capped.png" width="128x" alt="">
+ <img src="./figures/fig5_capped.png" width="128x" alt="">  <img src="./figures/fig3_capped.png" width="128px" alt=""> <img src="./figures/fig4_capped.png" width="128x" alt="">
 
 This is helpful when I have captions that go with specific images.
 
