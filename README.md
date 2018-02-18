@@ -1,43 +1,49 @@
-# captioners
-Scripts to add text to images
+# Overlays
 
-### captioner.py
+This project's goal is to automate the process of overlaying text onto images. Images to be overlayed with text are to be stored in the ```/in/bkg``` directory. The lines of text are to be stored in a text file ```cap.txt```.
 
-applies a black tint and captions a background image
+## Motivation
 
-**example:** *with* a logo/trademark
+A common design for a post on social media is an image overlayed with text. These types of posts show up a lot in niches aimed at self-motivation, specifically those concerned with physical fitness. 
 
-~~~
-$ python captioner.py
-Enter path of image to caption: in/bkg/bkg9.jpeg
-Enter caption: Punching air can be tough
-Include logo/trademark? (y/n): y
-Output image saved as: out/out.png
-~~~
-<img src="./figures/fig1.jpg" width="220x" alt="">  <img src="./figures/fig1_capped.png" width="220x" alt="">
+If, say, an Instagram page aims at posting more than one image a day, then the task of creating these images can take up significant time. Formatting the image is especially tedious. One must make sure the text has the right font, font size and font colour as well as being centre-aligned on the image.
 
-input image *bkg9.jpg* and its output *out.png*
+However, beyond the formatting, the recipe for these images is simple, it includes:
+
+1. an image
+2. a quote
+3. a trademark (optional)
+ 
+So one may see that it can be very beneficial yet straightforward to automate the process.
+
+Below is a screenshot from one of my Instagram accounts geared at promoting personal motivation and fitness. Notice the identical formatting of the images, very automatable!
+
+<img src="./figures/sample_feed.jpg" width="128x" alt="">
 
 
-**example:** *without* a logo/trademark
+## Getting Started
 
-~~~
-$ python captioner.py
-Enter path of image to caption: in/bkg/bkg8.jpg
-Enter caption: Look at this empty locker room, i am so inspired.
-Include logo/trademark? (y/n): n
-Output image saved as: out/out.png
-~~~
+Clone:
+```https://github.com/evmarts/captioners.git```
 
-<img src="./figures/fig2.jpg" width="220x" alt="">  <img src="./figures/fig2_capped.png" width="220x" alt="">
+Run the script:
+```python captioner.py```
 
-input image *bkg8.jpg* and its output *out.png*
+### Prerequisites
 
-### bulk-captioner.py
+Python
 
-captions a number of images from the *in/bkg/* directory with captions from the *in/cap.txt* text file
+## Built With
 
-**input files:** 
+* Python Imaging Library (PIL)
+
+## Examples
+
+Consider the following images located in the ```in/bkg``` directory: 
+
+<img src="./figures/fig5.jpg" width="128x" alt=""> <img src="./figures/fig3.jpg" width="128x" alt=""> <img src="./figures/fig4.jpg" width="128x" alt=""> 
+
+and consider the following text file located in the ```/in``` directory:
 
 *cap.txt*
 
@@ -47,33 +53,33 @@ Second caption.
 Third caption.
 ~~~
 
-*in/bkg/*
-
-<img src="./figures/fig5.jpg" width="128x" alt=""> <img src="./figures/fig3.jpg" width="128x" alt=""> <img src="./figures/fig4.jpg" width="128x" alt=""> 
-
-**example:** Generating pairings between an image and a caption
-
-~~~
-$ python bulk-captioner.py
-Generate all permutations? (y/n): n
-Include trademark/logo? (y/n): y
-Captioning bkg10.jpg...
-Output image saved as: out/_First capt.png
-Captioning bkg8.jpg...
-Output image saved as: out/_Second cap.png
-Captioning bkg9.jpg...
-Output image saved as: out/_Third capt.png
-~~~
-
 **output files:** 
 
  <img src="./figures/fig5_capped.png" width="220x" alt="">  <img src="./figures/fig3_capped.png" width="220x" alt=""> <img src="./figures/fig4_capped.png" width="220x" alt="">
 
-This is helpful when I have captions that go with specific images.
 
-However, most of the time I am bulk downloading images and captions so I want to generate all image/caption combinations and pick out the ones I like:
+#### Example 1 - overlaying images in order:
+Suppose we want to overlay the first line of text with the first image, the second line of text with the second image and so on.
 
-**example:** Generates all permutations of images with captions:
+We would run the script, specifying that we do not wish to generate all combinations of the images and lines of text. 
+
+~~~
+evmarts$ python overlayer.py
+Generate all permutations? (y/n): n
+Include trademark/logo? (y/n): y
+Overlaying bkg0.jpg...
+Output image saved as: out/_First capt.png
+Overlaying bkg1.jpg...
+Output image saved as: out/_Second cap.png
+Overlaying bkg2.jpg...
+Output image saved as: out/_Third capt.png
+~~~
+
+#### Example 2 - generating all combinations of overlays:
+
+Consider the same text file and the same three images as above. Perhaps we are unsure of what combination of image and text we would like to post. Indeed, some quotes go better with an image that others. 
+
+Here, we will overlay each line of text with each image file in order to create all combinations of pairings. With all the possible final products generated we can later go through them all and decide which ones we like.
 
 ~~~
 $ python bulk-captioner.py
@@ -99,14 +105,16 @@ Captioning bkg9.jpg...
 Output image saved as: out/2_Third capt.png
 ~~~
 
-**output files:**
+## Authors
 
-We have three images and three captions so we get nine output images:
- 
-<img src="./figures/fig12_capped.png" width="220x" alt=""> <img src="./figures/fig8_capped.png" width="220x" alt=""> <img src="./figures/fig10_capped.png" width="220x" alt="">
+* **Evan Martin**
 
-<img src="./figures/fig6_capped.png" width="220x" alt=""> <img src="./figures/fig13_capped.png" width="220x" alt=""> <img src="./figures/fig11_capped.png" width="220x" alt="">
- 
-<img src="./figures/fig7_capped.png" width="220x" alt=""> <img src="./figures/fig9_capped.png" width="220x" alt=""> <img src="./figures/fig14_capped.png" width="220x" alt="">
-  
- 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
