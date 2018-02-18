@@ -80,7 +80,7 @@ The following images are then stored in the ```/out``` directory:
 
 Consider the same text file and the same three images as above. Perhaps we just want to create all possible combinations of raw image and quote and then decide which ones go well together later. 
 
-Here, we will overlay quote with each raw image combinations in order to create all combinations of pairings. 
+Here, we will overlay each quote with each raw image in order to create all combinations of pairings. 
 
 ~~~
 evmarts$ python overlayer.py
