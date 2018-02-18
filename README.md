@@ -6,7 +6,7 @@ This project's goal is to automate the process of overlaying text onto images. I
 
 A common design for a post on social media is an image overlayed with text. These types of posts show up a lot in niches aimed at self-motivation, specifically those concerned with physical fitness. 
 
-If, say, an Instagram page aims at posting more than one image a day, then the task of creating these images can take up significant time. Formatting the image is especially tedious. One must make sure the text has the right font, font size and font colour as well as being correctly aligned on the image.
+If, say, an Instagram page aims at posting more than one image a day, then the task of creating these images can take up significant time. Formatting the image is especially tedious; one must make sure the text has the right font, font size and font colour as well as being correctly aligned on the image.
 
 However, beyond the formatting, the recipe for these images is simple, it includes:
 
@@ -23,7 +23,7 @@ Below is a screenshot from one of my Instagram accounts geared at promoting pers
 ## Getting Started
 
 Clone:
-```https://github.com/evmarts/overlayer.git```
+```git clone https://github.com/evmarts/overlayer.git```
 
 Run the script:
 ```python overlayer.py```
