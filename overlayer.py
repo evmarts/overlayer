@@ -88,10 +88,10 @@ def main():
 	im_paths = get_im_paths(dir_paths)
 	quotes = get_quotes("../overlayer/in/quotes.txt")
 
-	permute = (raw_input("Generate all permutations? (y/n): ") == 'y')
+	combos = (raw_input("Generate all combinations? (y/n): ") == 'y')
 	logoify = (raw_input("Include trademark/logo? (y/n): ") == 'y')
 
-	if permute:
+	if combos:
 		im_count = 0
 		for im_path in im_paths:
 			for quote in quotes:
